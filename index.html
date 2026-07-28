@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Есенин — bar · dance · cafe, Минск</title>
+<meta name="description" content="Есенин — кафе-бар с танцполом и караоке на Малиновке в Минске. Кухня, коктейли, кальян, живая музыка. ул. Сергея Есенина, 10.">
+<style>
+@font-face{font-family:'Yeseva One';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/OpNJno4ck8vc-xYpwWWxliBVWyXD.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-family:'Yeseva One';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/OpNJno4ck8vc-xYpwWWxli1VWw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'PT Serif';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/EJRSQgYoZZY2vCFuvAnt66qWVyvHpA.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-family:'PT Serif';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/EJRSQgYoZZY2vCFuvAnt66qSVys.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'PT Serif';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/EJRVQgYoZZY2vCFuvAFYzr-tdg.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-family:'PT Serif';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/EJRVQgYoZZY2vCFuvAFWzr8.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'PT Serif';font-style:italic;font-weight:400;font-display:swap;src:url(fonts/EJRTQgYoZZY2vCFuvAFT_rm1chb-.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-family:'PT Serif';font-style:italic;font-weight:400;font-display:swap;src:url(fonts/EJRTQgYoZZY2vCFuvAFT_r21cg.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Marck Script';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/nwpTtK2oNgBA3Or78gapdwuyzCg_WMM.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-family:'Marck Script';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/nwpTtK2oNgBA3Or78gapdwuyyCg_.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+:root{
+  --navy:#0c1420;
+  --navy2:#111c2c;
+  --emerald:#0e2b23;
+  --emerald2:#123a2f;
+  --brass:#c9a35d;
+  --brass-light:#e8cd94;
+  --cream:#f3ecdd;
+  --cream-dim:#cabfa6;
+  --line:rgba(201,163,93,.28);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--navy);
+  color:var(--cream);
+  font-family:'PT Serif',Georgia,serif;
+  font-size:17px;
+  line-height:1.6;
+  overflow-x:clip;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+h1,h2,h3,.disp{font-family:'Yeseva One',Georgia,serif;font-weight:400;letter-spacing:.01em}
+.script{font-family:'Marck Script',cursive;color:var(--brass-light)}
+.eyebrow{
+  font-family:'PT Serif',serif;font-style:italic;color:var(--brass);
+  text-transform:uppercase;letter-spacing:.22em;font-size:12.5px;
+  display:flex;align-items:center;gap:14px;
+}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--brass);display:inline-block}
+
+/* preloader */
+#pre{position:fixed;inset:0;background:var(--navy);z-index:999;display:flex;align-items:center;justify-content:center;transition:opacity .6s ease}
+#pre.gone{opacity:0;pointer-events:none}
+#pre .mono{font-family:'Marck Script',cursive;font-size:56px;color:var(--brass-light);opacity:.85;animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+body.lock{overflow:hidden}
+
+/* header */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:linear-gradient(to bottom, rgba(9,14,22,.92), rgba(9,14,22,0));
+  padding:22px 0;
+  transition:background .3s ease, padding .3s ease, border-color .3s ease;
+  border-bottom:1px solid transparent;
+}
+header.solid{background:rgba(9,14,22,.96);padding:14px 0;border-color:var(--line);backdrop-filter:blur(6px)}
+header .bar{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:12px;font-family:'Yeseva One',serif;font-size:22px;letter-spacing:.03em}
+.logo .sig{font-family:'Marck Script',cursive;font-size:34px;color:var(--brass-light);line-height:1}
+nav.mainnav{display:flex;gap:34px;font-size:14.5px;letter-spacing:.03em}
+nav.mainnav a{position:relative;padding-bottom:4px;color:var(--cream-dim);transition:color .2s}
+nav.mainnav a:hover{color:var(--brass-light)}
+.hdr-right{display:flex;align-items:center;gap:22px}
+.hdr-phone{font-family:'PT Serif',serif;font-size:15px;color:var(--cream);white-space:nowrap}
+.hdr-cta{
+  border:1px solid var(--brass);color:var(--brass-light);
+  padding:9px 20px;font-size:13.5px;letter-spacing:.08em;text-transform:uppercase;
+  transition:background .2s,color .2s;white-space:nowrap;
+}
+.hdr-cta:hover{background:var(--brass);color:var(--navy)}
+.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--cream);width:44px;height:44px;font-size:20px;cursor:pointer}
+
+/* HERO */
+.hero{
+  position:relative;min-height:100svh;display:flex;align-items:flex-end;
+  overflow:clip;
+}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.55) contrast(1.08) saturate(1.05)}
+.hero-media::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top, var(--navy) 4%, rgba(12,20,32,.35) 45%, rgba(12,20,32,.15) 70%),
+             linear-gradient(to right, rgba(12,20,32,.55), transparent 55%);
+}
+.hero-inner{position:relative;z-index:2;padding:0 0 96px;width:100%}
+.hero .eyebrow{color:var(--brass-light);margin-bottom:22px}
+.hero h1{
+  font-size:clamp(48px,8vw,110px);line-height:.94;color:var(--cream);
+  text-shadow:0 6px 40px rgba(0,0,0,.5);
+}
+.hero h1 em{font-style:normal;font-family:'Marck Script',cursive;color:var(--brass-light);font-size:1.08em;display:block;line-height:1}
+.hero .tagline{max-width:520px;margin-top:26px;font-size:19px;color:var(--cream-dim);font-style:italic}
+.hero .facts{display:flex;gap:38px;margin-top:44px;flex-wrap:wrap}
+.hero .fact b{display:block;font-family:'Yeseva One',serif;font-size:26px;color:var(--brass-light)}
+.hero .fact span{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-dim)}
+.scrolldown{
+  position:absolute;right:40px;bottom:36px;z-index:2;writing-mode:vertical-rl;
+  color:var(--cream-dim);font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+  display:flex;align-items:center;gap:10px;
+}
+.scrolldown::after{content:"";width:1px;height:60px;background:linear-gradient(var(--brass),transparent);display:block}
+
+/* section basics */
+section{position:relative;padding:120px 0}
+.section-head{max-width:640px;margin-bottom:64px}
+.section-head h2{font-size:clamp(34px,4.4vw,54px);margin-top:16px;color:var(--cream)}
+.section-head p{margin-top:18px;color:var(--cream-dim);font-size:17px}
+
+/* ABOUT — sticky image + copy */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:stretch}
+.about-grid .col{height:100%}
+.about-grid .sticky{position:sticky;top:120px}
+.about-media{position:relative;overflow:clip;border-radius:2px}
+.about-media img{width:100%;height:640px;object-fit:cover;filter:saturate(1.05) contrast(1.03)}
+.about-media .frame{position:absolute;inset:14px;border:1px solid var(--brass);pointer-events:none;opacity:.55}
+.about-copy p{color:var(--cream-dim);margin-bottom:20px;font-size:17px}
+.about-copy p:first-of-type{font-size:20px;color:var(--cream)}
+.quote{
+  margin:40px 0;padding:26px 0 26px 30px;border-left:2px solid var(--brass);
+  font-family:'Marck Script',cursive;font-size:30px;line-height:1.35;color:var(--brass-light);
+}
+.quote cite{display:block;margin-top:10px;font-family:'PT Serif',serif;font-style:italic;font-size:14px;color:var(--cream-dim)}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:52px;border:1px solid var(--line)}
+.stat-row div{background:var(--navy);padding:24px 22px}
+.stat-row b{display:block;font-family:'Yeseva One',serif;font-size:30px;color:var(--brass-light)}
+.stat-row span{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--cream-dim)}
+
+/* FEATURES marquee-ish row */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{border:1px solid var(--line);padding:9px 16px;font-size:13.5px;color:var(--cream-dim);letter-spacing:.02em}
+
+/* GALLERY */
+.gallery-strip{
+  display:grid;grid-template-columns:repeat(6,1fr);gap:10px;
+}
+.gallery-strip a{overflow:clip;position:relative;display:block}
+.gallery-strip img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;filter:saturate(1.05) contrast(1.02)}
+.gallery-strip a:hover img{transform:scale(1.06)}
+.gallery-strip .g1{grid-column:span 3;grid-row:span 2}
+.gallery-strip .g2{grid-column:span 3;grid-row:span 1}
+.gallery-strip .g3{grid-column:span 2;grid-row:span 1}
+.gallery-strip .tall{grid-row:span 2}
+
+/* MENU */
+.menu-tabs{display:flex;gap:10px;margin-bottom:48px;flex-wrap:wrap}
+.menu-tab{
+  background:none;border:1px solid var(--line);color:var(--cream-dim);
+  padding:11px 22px;font-family:'PT Serif',serif;font-size:14.5px;cursor:pointer;
+  letter-spacing:.03em;transition:all .2s;
+}
+.menu-tab.active{border-color:var(--brass);color:var(--navy);background:var(--brass-light)}
+.menu-panel{display:none}
+.menu-panel.active{display:block}
+.menu-cat{margin-bottom:52px}
+.menu-cat h3{font-size:20px;color:var(--brass-light);font-family:'PT Serif',serif;font-style:italic;font-weight:700;margin-bottom:22px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.menu-item{display:grid;grid-template-columns:1fr auto;gap:6px 24px;padding:16px 0;border-bottom:1px dashed rgba(202,191,166,.18)}
+.menu-item .name{font-size:17px;color:var(--cream)}
+.menu-item .desc{grid-column:1/2;font-size:14px;color:var(--cream-dim);font-style:italic;margin-top:2px;max-width:560px}
+.menu-item .price{font-family:'Yeseva One',serif;font-size:18px;color:var(--brass-light);white-space:nowrap;text-align:right}
+.menu-item .wt{grid-column:2/3;text-align:right;font-size:12px;color:var(--cream-dim)}
+.menu-note{margin-top:8px;font-size:13.5px;color:var(--cream-dim);font-style:italic}
+.menu-cta{margin-top:20px}
+
+/* EVENTS / features photo band */
+.band{position:relative;overflow:clip;height:60vh;min-height:420px}
+.band img{width:100%;height:100%;object-fit:cover;filter:brightness(.6) saturate(1.05)}
+.band .band-copy{position:absolute;inset:0;display:flex;align-items:center}
+.band .band-copy .wrap{width:100%}
+.band h2{font-size:clamp(30px,5vw,58px);max-width:640px;color:var(--cream)}
+
+/* REVIEWS */
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.review{background:var(--navy2);padding:32px 28px}
+.review .stars{color:var(--brass-light);letter-spacing:2px;font-size:14px;margin-bottom:14px}
+.review p{font-size:15.5px;color:var(--cream-dim);margin-bottom:16px}
+.review .who{font-size:13px;color:var(--cream);display:flex;justify-content:space-between}
+.review .who span{color:var(--cream-dim)}
+.reviews-total{margin-top:40px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.reviews-total b{font-family:'Yeseva One',serif;font-size:34px;color:var(--brass-light)}
+
+/* MAP / CONTACT */
+.contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:0;border:1px solid var(--line)}
+.contact-info{padding:56px 50px;background:var(--navy2)}
+.contact-info .row{margin-bottom:30px}
+.contact-info .row h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+.contact-info .row p, .contact-info .row a{font-size:17px;color:var(--cream)}
+.contact-info .hours-table{width:100%;border-collapse:collapse;margin-top:4px}
+.contact-info .hours-table td{padding:4px 0;font-size:15px;color:var(--cream-dim);border-bottom:1px dashed rgba(202,191,166,.14)}
+.contact-info .hours-table td:last-child{text-align:right;color:var(--cream)}
+.map-embed{position:relative;min-height:420px;background:var(--navy2)}
+.map-embed iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.15) contrast(1.05)}
+
+/* social tiles - explicit grid, count-aware */
+.social-tiles{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);margin-top:36px}
+.social-tiles a{padding:22px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;color:var(--cream);font-size:15px;transition:background .2s}
+.social-tiles a:hover{background:rgba(201,163,93,.08)}
+.social-tiles a:nth-child(2n){border-right:none}
+.social-tiles a:nth-last-child(-n+2){border-bottom:none}
+.social-tiles a span{color:var(--cream-dim);font-size:12.5px}
+
+footer{padding:60px 0 40px;border-top:1px solid var(--line);margin-top:20px}
+.footer-grid{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:30px}
+footer .fine{font-size:12.5px;color:var(--cream-dim);margin-top:20px;line-height:1.7}
+.footer-sig{font-family:'Marck Script',cursive;font-size:42px;color:var(--brass-light)}
+
+.sticky-call{
+  position:fixed;right:22px;bottom:22px;z-index:90;
+  background:var(--brass-light);color:var(--navy);
+  padding:14px 20px;border-radius:30px;font-size:14px;letter-spacing:.03em;
+  display:none;align-items:center;gap:8px;box-shadow:0 8px 26px rgba(0,0,0,.35);
+}
+
+.deco-line{width:1px;background:var(--line);height:70px;margin:0 auto}
+
+/* ============ RESPONSIVE LADDER ============ */
+@media (max-width:1024px){
+  .wrap{padding:0 28px}
+  .about-grid{gap:40px}
+  .about-media img{height:520px}
+  .gallery-strip{grid-template-columns:repeat(4,1fr)}
+  .reviews-grid{grid-template-columns:repeat(2,1fr)}
+  nav.mainnav{gap:22px;font-size:13.5px}
+}
+@media (max-width:900px){
+  .hdr-phone{display:none}
+  .sticky-call{display:flex}
+  .contact-grid{grid-template-columns:1fr}
+  .map-embed{min-height:340px}
+}
+@media (max-width:860px){
+  .about-grid{grid-template-columns:1fr}
+  .about-grid .sticky{position:static}
+  .about-media img{height:420px}
+  nav.mainnav{display:none}
+  .menu-toggle{display:block}
+  .gallery-strip{grid-template-columns:repeat(2,1fr)}
+  .gallery-strip .g1{grid-column:span 2}
+  .stat-row{grid-template-columns:repeat(2,1fr)}
+  .reviews-grid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  section{padding:80px 0}
+  .wrap{padding:0 20px}
+  .hero-inner{padding-bottom:64px}
+  .hero .facts{gap:24px}
+  .quote{font-size:24px}
+  .menu-item{grid-template-columns:1fr auto}
+  .social-tiles{grid-template-columns:1fr}
+  .social-tiles a:nth-child(2n){border-right:1px solid var(--line)}
+  .social-tiles a:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+  .social-tiles a:last-child{border-bottom:none}
+  .contact-info{padding:40px 26px}
+  .band{height:44vh;min-height:300px}
+  footer .footer-grid{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:400px){
+  .hero h1{font-size:44px}
+  .disp, h2{font-size:28px}
+  .logo{font-size:18px}
+  .logo .sig{font-size:26px}
+}
+@media (pointer:coarse){
+  nav.mainnav a, .menu-tab, .hdr-cta{padding-top:10px;padding-bottom:10px}
+}
+@media (max-width:900px){
+  a[href="https://yandex.by/maps/org/yesenin/25928288207/reviews/"],
+  .contact-info .row a[href^="tel:"],
+  .sticky-call a{
+    display:inline-flex;align-items:center;min-height:30px;
+  }
+}
+</style>
+</head>
+<body class="lock">
+
+<div id="pre"><div class="mono">Есенин</div></div>
+
+<header id="hdr">
+  <div class="wrap bar">
+    <a class="logo" href="#top"><span class="sig">Ё</span>Есенин</a>
+    <nav class="mainnav">
+      <a href="#about">О месте</a>
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Атмосфера</a>
+      <a href="#events">События</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="hdr-right">
+      <a class="hdr-phone" href="tel:+375293050603">+375 (29) 305‑06‑03</a>
+      <a class="hdr-cta" href="#contact">Забронировать</a>
+      <button class="menu-toggle" id="mtoggle" aria-label="Меню">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile nav -->
+<div id="mnav" style="display:none;position:fixed;inset:0;z-index:99;background:var(--navy);flex-direction:column;align-items:center;justify-content:center;gap:30px;">
+  <a href="#about" class="mnav-link" style="font-family:'Yeseva One',serif;font-size:26px;color:var(--cream)">О месте</a>
+  <a href="#menu" class="mnav-link" style="font-family:'Yeseva One',serif;font-size:26px;color:var(--cream)">Меню</a>
+  <a href="#gallery" class="mnav-link" style="font-family:'Yeseva One',serif;font-size:26px;color:var(--cream)">Атмосфера</a>
+  <a href="#events" class="mnav-link" style="font-family:'Yeseva One',serif;font-size:26px;color:var(--cream)">События</a>
+  <a href="#reviews" class="mnav-link" style="font-family:'Yeseva One',serif;font-size:26px;color:var(--cream)">Отзывы</a>
+  <a href="#contact" class="mnav-link" style="font-family:'Yeseva One',serif;font-size:26px;color:var(--cream)">Контакты</a>
+  <button id="mclose" style="margin-top:20px;background:none;border:1px solid var(--line);color:var(--cream);width:48px;height:48px;font-size:20px">✕</button>
+</div>
+
+<a id="top"></a>
+<section class="hero">
+  <div class="hero-media"><img src="img/exterior_sign.jpg" alt="Вывеска «Есенин» — bar · dance · cafe, Минск"></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow">ул. Сергея Есенина, 10 · Минск</div>
+    <h1>Есенин<em>bar · dance · cafe</em></h1>
+    <p class="tagline">Кухня, коктейли и танцпол в двух шагах от Малиновки — там, где вечер начинается ужином, а продолжается диджеем.</p>
+    <div class="facts">
+      <div class="fact"><b>4,4</b><span>Яндекс · 1232 оценки</span></div>
+      <div class="fact"><b>410</b><span>отзывов</span></div>
+      <div class="fact"><b>35–60 Br</b><span>средний чек</span></div>
+      <div class="fact"><b>02:00–05:00</b><span>работаем допоздна чт–вс</span></div>
+    </div>
+  </div>
+  <div class="scrolldown">Листайте вниз</div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="col">
+      <div class="sticky about-media">
+        <img src="img/stairs_art.jpg" alt="Лестница в «Есенине»: золочёный силуэт в шляпе на фоне кирпича">
+        <div class="frame"></div>
+      </div>
+    </div>
+    <div class="col about-copy">
+      <div class="eyebrow">О месте</div>
+      <h2 style="margin:16px 0 26px">Автограф на фасаде вместо вывески</h2>
+      <p>Заведение носит имя улицы, на которой стоит, — Сергея Есенина. Тот же росчерк, что вынесен на фасад крупной подсвеченной монограммой «Ё», встречает и внутри: над барной стойкой, на бархатных диванах, у гардероба.</p>
+      <p>Внутри — тёмные стены, латунь, зелень и голошный силуэт человека в шляпе на лестнице между этажами. Кафе днём и бар-караоке с танцполом вечером: по будням здесь обедают, по пятницам и субботам — танцуют до пяти утра.</p>
+
+      <div class="quote">«Не жалею, не зову, не плачу,<br>всё пройдёт, как с белых яблонь дым…»
+        <cite>— Сергей Есенин, 1921. Строки, давшие имя улице и — вслед за ней — этому месту.</cite>
+      </div>
+
+      <p>По отзывам гостей: сильная кухня и бережное обслуживание днём, громкая музыка и живой диджей по вечерам пятницы-субботы — два разных сценария одного адреса.</p>
+
+      <div class="stat-row">
+        <div><b>90</b><span>мест в зале</span></div>
+        <div><b>12:00</b><span>открытие вт–чт</span></div>
+        <div><b>VIP</b><span>отдельная комната</span></div>
+        <div><b>2004</b><span>ООО «Овер Джой»</span></div>
+      </div>
+
+      <div class="chips">
+        <div class="chip">Танцпол · диджей</div>
+        <div class="chip">Караоке</div>
+        <div class="chip">Кальян</div>
+        <div class="chip">Летняя веранда</div>
+        <div class="chip">Wi-Fi</div>
+        <div class="chip">Можно с собакой</div>
+        <div class="chip">Подарочный сертификат</div>
+        <div class="chip">Банкеты и корпоративы</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Атмосфера</div>
+      <h2>Как здесь на самом деле</h2>
+      <p>Фотографии — из галереи заведения на Яндекс Картах: интерьер, веранда и кухня «Есенина» такие, какие они есть, без постановки.</p>
+    </div>
+    <div class="gallery-strip">
+      <a class="g1" href="img/couch_logo.jpg" target="_blank"><img src="img/couch_logo.jpg" alt="Синий бархатный диван и неоновая монограмма «Ё»"></a>
+      <a class="g3 tall" href="img/veranda.jpg" target="_blank"><img src="img/veranda.jpg" alt="Летняя веранда «Есенина»"></a>
+      <a class="g3" href="img/bartender.jpg" target="_blank"><img src="img/bartender.jpg" alt="Бармен готовит коктейль вечером"></a>
+      <a class="g3" href="img/cocktails.jpg" target="_blank"><img src="img/cocktails.jpg" alt="Дегустационный сет коктейлей"></a>
+      <a class="g1" href="img/seafood.jpg" target="_blank"><img src="img/seafood.jpg" alt="Пивная доска: наггетсы, кольца, картофель фри, соусы"></a>
+      <a class="g2" href="img/terrace_couple.jpg" target="_blank"><img src="img/terrace_couple.jpg" alt="Гости на летней веранде с бокалом вина"></a>
+      <a class="g2" href="img/bruschetta.jpg" target="_blank"><img src="img/bruschetta.jpg" alt="Брускетты с грибами и перцем"></a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="deco-line"></div></div>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Меню</div>
+      <h2>Кухня «Есенина»</h2>
+      <p>Цены и позиции — дословно из официального меню на Яндекс Картах, обновлено 23 июня 2026. Полный список значительно больше — здесь ключевые категории.</p>
+    </div>
+
+    <div class="menu-tabs" id="menuTabs">
+      <button class="menu-tab active" data-t="zakuski">Закуски</button>
+      <button class="menu-tab" data-t="salaty">Салаты</button>
+      <button class="menu-tab" data-t="goryachee">Горячее</button>
+      <button class="menu-tab" data-t="pasta">Пасты</button>
+      <button class="menu-tab" data-t="burger">Бургеры</button>
+      <button class="menu-tab" data-t="desert">Десерты</button>
+    </div>
+
+    <div class="menu-panel active" id="panel-zakuski">
+      <div class="menu-cat">
+        <h3>Холодные закуски</h3>
+        <div class="menu-item"><div class="name">Чиабатта / сырокопчёный окорок / груша и песто</div><div class="desc">Два слайса поджаренной чиабатты, сырокопчёный окорок, груша, соус песто, руккола.</div><div class="price">23 Br</div><div class="wt">200 г</div></div>
+        <div class="menu-item"><div class="name">Тартар из говядины / чиабатта</div><div class="desc">Мелкорубленая говяжья вырезка с зелёным луком, каперсами, вялеными томатами, соусом ворчестер и чёрным перцем.</div><div class="price">33 Br</div><div class="wt">320 г</div></div>
+        <div class="menu-item"><div class="name">Сырное ассорти</div><div class="desc">Полутвёрдый сыр, выдержанный сыр, сыры с благородной плесенью (бри и дор-блю), мёд, орехи, виноград, мята.</div><div class="price">45 Br</div><div class="wt">350 г</div></div>
+        <div class="menu-item"><div class="name">Мясное ассорти</div><div class="desc">Окорок с/к, колбаса с/к, говядина с/к, филе куриное с/к, полендвица с/в, оливки, маслины, черри, микс салат.</div><div class="price">40 Br</div><div class="wt">310 г</div></div>
+        <div class="menu-item"><div class="name">Карпаччо из говядины</div><div class="desc">Тончайшие слайсы сырой говяжьей вырезки, оливковое масло, лимонный сок, бальзамический уксус, руккола, пармезан.</div><div class="price">30 Br</div><div class="wt">205 г</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Горячие закуски</h3>
+        <div class="menu-item"><div class="name">Пивная доска Type XL</div><div class="desc">Луковые кольца, наггетсы, куриные крылья, креветки в панировке, охотничьи колбаски, картофель фри. Соусы Рэнч, BBQ, сырный.</div><div class="price">65 Br</div><div class="wt">1180 г</div></div>
+        <div class="menu-item"><div class="name">Креветки в панко / зелёный салат / сладкий чили</div><div class="desc">Сочное нежное мясо креветки с хрустящей корочкой.</div><div class="price">25 Br</div><div class="wt">240 г</div></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-salaty">
+      <div class="menu-cat">
+        <h3>Салаты</h3>
+        <div class="menu-item"><div class="name">«Ensalada española picante»</div><div class="desc">Пикантный испанский салат: жареное куриное филе, сырокопчёный окорок, томаты черри, вяленые томаты, мини моцарелла, горчичная заправка.</div><div class="price">28 Br</div><div class="wt">280 г</div></div>
+        <div class="menu-item"><div class="name">Классический «Цезарь» / цыплёнок</div><div class="desc">Хрустящие листья романо, пшеничные гренки, тёртый пармезан, заправка на основе яиц, оливкового масла, лимонного сока.</div><div class="price">24 Br</div><div class="wt">300 г</div></div>
+        <div class="menu-item"><div class="name">Классический «Цезарь» / креветки</div><div class="desc">Лёгкие морепродукты, хрустящая зелень и пикантная заправка.</div><div class="price">33 Br</div><div class="wt">300 г</div></div>
+        <div class="menu-item"><div class="name">Insalata di Parma</div><div class="desc">Жареные в панировке креветки, клубника (по сезону), дольки апельсина, цукини, сырокопчёный окорок, медово-горчичная заправка, миндальные лепестки.</div><div class="price">41 Br</div><div class="wt">300 г</div></div>
+        <div class="menu-item"><div class="name">Острый салат с языком</div><div class="desc">Язык, маринованный красный лук, маринованный огурец, сладкий перец, айсберг, греческая заправка с табаско.</div><div class="price">24 Br</div><div class="wt">250 г</div></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-goryachee">
+      <div class="menu-cat">
+        <h3>Горячие блюда</h3>
+        <div class="menu-item"><div class="name">Свиные рёбра BBQ / американский гарнир</div><div class="desc">Глазированные мясные рёбра, картофель фри, салат коул-слоу, кетчуп, маринованный огурец, перец халапеньо.</div><div class="price">45 Br</div><div class="wt">670 г</div></div>
+        <div class="menu-item"><div class="name">Говяжья щека / крем из цветной капусты</div><div class="desc">Щёки в мясном соусе с красным вином и сливочным маслом, крем из цветной капусты, чесночные чипсы, микрозелень.</div><div class="price">31 Br</div><div class="wt">285 г</div></div>
+        <div class="menu-item"><div class="name">Запечённый лосось / ньокки в сливочно-шпинатном соусе</div><div class="desc">Средиземноморские морепродукты и домашние картофельные клёцки.</div><div class="price">41 Br</div><div class="wt">310 г</div></div>
+        <div class="menu-item"><div class="name">Марлин в «сицилийском стиле»</div><div class="desc">Жареный марлин со спаржей, томатами черри, оливками, каперсами, сливочным маслом, белым вином, чесноком и петрушкой.</div><div class="price">34 Br</div><div class="wt">320 г</div></div>
+        <div class="menu-item"><div class="name">Якитори / азиатский салат</div><div class="desc">Куриные шашлычки, маринованные в апельсиновом соке, белом вине, соусе терияки и специях.</div><div class="price">36 Br</div><div class="wt">350 г</div></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-pasta">
+      <div class="menu-cat">
+        <h3>Пасты и ризотто</h3>
+        <div class="menu-item"><div class="name">Спагетти Карбонара</div><div class="desc">Паста, ломтики бекона, соус из яиц, тёртого сыра, соли и чёрного перца.</div><div class="price">23 Br</div><div class="wt">340 г</div></div>
+        <div class="menu-item"><div class="name">Спагетти Болоньезе</div><div class="desc">Спагетти и густой насыщенный мясной соус-рагу.</div><div class="price">24 Br</div><div class="wt">415 г</div></div>
+        <div class="menu-item"><div class="name">Спагетти / мясо креветки / шпинатный соус</div><div class="desc">Креветки, шпинат и сливочный соус из сливок и тёртого сыра.</div><div class="price">28 Br</div><div class="wt">300 г</div></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-burger">
+      <div class="menu-cat">
+        <h3>Бургеры</h3>
+        <div class="menu-item"><div class="name">Есенин Биф BBQ Бургер</div><div class="desc">Говяжья котлета, маринованный огурец, свежий помидор, айсберг, красный лук, соус BBQ.</div><div class="price">25 Br</div><div class="wt">345 г</div></div>
+        <div class="menu-item"><div class="name">Есенин Чикен Cheese Бургер</div><div class="desc">Куриное филе в панировке, сырная котлета, маринованный огурец, свежий помидор, айсберг, сырный соус.</div><div class="price">23 Br</div><div class="wt">390 г</div></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-desert">
+      <div class="menu-cat">
+        <h3>Десерты</h3>
+        <div class="menu-item"><div class="name">Блины / пьяная вишня / мороженое</div><div class="desc">Тонкие блины, томлёная в сахаре и красном вине вишня, миндальные лепестки.</div><div class="price">16 Br</div><div class="wt">325 г</div></div>
+        <div class="menu-item"><div class="name">Французский тост / банан и клубника / мороженое</div><div class="desc">Горячий хрустящий обжаренный тост и холодное сливочное мороженое.</div><div class="price">14 Br</div><div class="wt">250 г</div></div>
+        <div class="menu-item"><div class="name">Торт «Три шоколада»</div><div class="desc">Миндальный бисквит, три слоя мусса — горький, молочный и белый шоколад, вафельная крошка, пралине.</div><div class="price">15 Br</div><div class="wt">100 г</div></div>
+        <div class="menu-item"><div class="name">Мороженое</div><div class="desc">Классический пломбир с топингом на выбор: шоколад, карамель, клубника, «пьяная вишня».</div><div class="price">7 Br</div><div class="wt">100 г</div></div>
+      </div>
+    </div>
+
+    <p class="menu-note">Также в меню: гарниры, супы (солянка, холодный борщ), соусы, коктейльная и дымная (кальянная) карта — полные версии доступны в заведении и в Instagram-профиле @esenin.cafe.bar.</p>
+  </div>
+</section>
+
+<section class="band" id="events" style="padding:0">
+  <img src="img/logo_interior.jpg" alt="Неоновая монограмма «Ё» и бархатный диван в интерьере «Есенина»">
+  <div class="band-copy">
+    <div class="wrap">
+      <div class="eyebrow" style="color:var(--brass-light)">Вечер и события</div>
+      <h2 style="margin-top:16px">Дни рождения, корпоративы,<br>банкеты и свадьбы — с диджеем и караоке</h2>
+      <p style="max-width:520px;margin-top:20px;color:var(--cream-dim)">По пятницам и субботам — танцпол и живой диджей допоздна. Есть отдельная VIP-комната для закрытых мероприятий.</p>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Отзывы</div>
+      <h2>Что говорят гости</h2>
+      <p>Реальные отзывы с Яндекс Карт, приведены с указанием автора и даты — без сокращения смысла.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review">
+        <div class="stars">★★★★☆</div>
+        <p>«Хорошее заведение. Зал средних размеров. Есть бар, танцпол... Еда вкусная. Обслуживание хорошее. Есть администратор, официанты, гардеробщик. В зале не курят.»</p>
+        <div class="who">Игорь И., Знаток города 10 уровня <span>23 марта</span></div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>«Комфортное место, брали vip-комнату на день рождения, всё было отлично.»</p>
+        <div class="who">Саша, Знаток города 8 уровня <span>27 июля</span></div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>«Чудесное место, очень приемлемая цена на обеды, спокойная атмосфера, фоновая музыка, и вечерний отдых тоже порадовал — было шумно, танцевально и весело! Еда вкусная, внимательный персонал.»</p>
+        <div class="who">Анжела Титовец, Знаток города 4 уровня <span>30 марта</span></div>
+      </div>
+    </div>
+    <div class="reviews-total">
+      <b>4,4 / 5</b>
+      <div>
+        <div style="color:var(--cream)">1232 оценки · 410 отзывов на Яндекс Картах</div>
+        <a href="https://yandex.by/maps/org/yesenin/25928288207/reviews/" target="_blank" style="color:var(--brass-light);font-size:14px">Читать все отзывы →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Контакты</div>
+      <h2>Как добраться и когда мы работаем</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="row">
+          <h4>Адрес</h4>
+          <p>Минск, ул. Сергея Есенина, 10, 2 этаж<br><span style="color:var(--cream-dim);font-size:14px">Малиновка, рядом со ст. м. «Малиновка»</span></p>
+        </div>
+        <div class="row">
+          <h4>Телефон</h4>
+          <a href="tel:+375293050603">+375 (29) 305‑06‑03</a>
+        </div>
+        <div class="row">
+          <h4>Часы работы</h4>
+          <table class="hours-table">
+            <tr><td>Вторник</td><td>12:00 – 02:00</td></tr>
+            <tr><td>Среда</td><td>12:00 – 02:00</td></tr>
+            <tr><td>Четверг</td><td>12:00 – 02:00</td></tr>
+            <tr><td>Пятница</td><td>12:00 – 05:00</td></tr>
+            <tr><td>Суббота</td><td>15:00 – 05:00</td></tr>
+            <tr><td>Воскресенье</td><td>15:00 – 02:00</td></tr>
+            <tr><td>Понедельник</td><td>выходной</td></tr>
+          </table>
+          <p class="menu-note">По вывеске на входе заведения — самый точный источник. Онлайн-справочники (2ГИС, RestaurantGuru) местами расходятся на 1 час в воскресенье; уточняйте по телефону.</p>
+        </div>
+        <div class="social-tiles">
+          <a href="https://www.instagram.com/esenin.cafe.bar/" target="_blank">Instagram <span>@esenin.cafe.bar</span></a>
+          <a href="https://esenincafebar.taplink.ws" target="_blank">Меню и карты <span>taplink.ws</span></a>
+          <a href="tel:+375293050603">Бронь стола <span>звонок</span></a>
+          <a href="https://yandex.by/maps/org/yesenin/25928288207/" target="_blank">Яндекс Карты <span>карточка</span></a>
+        </div>
+      </div>
+      <div class="map-embed">
+        <iframe src="https://yandex.by/map-widget/v1/org/yesenin/25928288207/?ll=27.465234%2C53.849492&z=16" allowfullscreen loading="lazy" title="Есенин на карте"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-sig">Ё Есенин</div>
+        <div class="fine">
+          Минск, ул. Сергея Есенина, 10, 2 этаж · +375 (29) 305‑06‑03<br>
+          ООО «Овер Джой», УНП 193338158 (по данным вывески заведения)<br>
+          Фотографии — из открытой галереи заведения на Яндекс Картах; предназначены как временная витрина до замены на профессиональную съёмку.
+        </div>
+      </div>
+      <div class="chips">
+        <a class="chip" href="#top">Наверх ↑</a>
+        <a class="chip" href="https://yandex.by/maps/org/yesenin/25928288207/" target="_blank">Яндекс Карты</a>
+        <a class="chip" href="https://www.instagram.com/esenin.cafe.bar/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-call" id="stickyCall">
+  <a href="tel:+375293050603" style="display:flex;align-items:center;gap:8px;color:inherit">📞 Позвонить</a>
+</div>
+
+<script>
+(function(){
+  // preloader self-destruct
+  var pre = document.getElementById('pre');
+  function killPre(){ pre.classList.add('gone'); document.body.classList.remove('lock'); }
+  window.addEventListener('load', killPre);
+  setTimeout(killPre, 2500);
+
+  // header solid on scroll
+  var hdr = document.getElementById('hdr');
+  function onScroll(){
+    if(window.scrollY > 40){ hdr.classList.add('solid'); } else { hdr.classList.remove('solid'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // mobile nav
+  var mtoggle = document.getElementById('mtoggle');
+  var mnav = document.getElementById('mnav');
+  var mclose = document.getElementById('mclose');
+  mtoggle.addEventListener('click', function(){ mnav.style.display = 'flex'; document.body.classList.add('lock'); });
+  mclose.addEventListener('click', function(){ mnav.style.display = 'none'; document.body.classList.remove('lock'); });
+  document.querySelectorAll('.mnav-link').forEach(function(a){
+    a.addEventListener('click', function(){ mnav.style.display='none'; document.body.classList.remove('lock'); });
+  });
+
+  // menu tabs
+  var tabs = document.querySelectorAll('.menu-tab');
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabs.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      document.querySelectorAll('.menu-panel').forEach(function(p){ p.classList.remove('active'); });
+      var panel = document.getElementById('panel-' + btn.dataset.t);
+      if(panel) panel.classList.add('active');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
