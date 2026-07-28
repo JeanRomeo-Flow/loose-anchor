@@ -228,13 +228,13 @@ section{position:relative;padding:120px 0}
 
 /* social tiles - explicit grid, count-aware */
 .social-tiles{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);margin-top:36px}
-.social-tiles a{padding:22px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;color:var(--cream);font-size:15px;transition:background .2s}
+.social-tiles a{padding:22px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;align-items:flex-start;gap:8px;color:var(--cream);font-size:15px;transition:background .2s}
 .tile-label{display:flex;align-items:center;gap:12px}
 .tile-label svg{width:20px;height:20px;flex:none;color:var(--brass-light)}
 .social-tiles a:hover{background:rgba(201,163,93,.08)}
 .social-tiles a:nth-child(2n){border-right:none}
 .social-tiles a:nth-last-child(-n+2){border-bottom:none}
-.social-tiles a span{color:var(--cream-dim);font-size:12.5px}
+.social-tiles a > span:not(.tile-label){color:var(--cream-dim);font-size:12.5px;padding-left:32px}
 
 footer{padding:60px 0 40px;border-top:1px solid var(--line);margin-top:20px}
 .footer-grid{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:30px}
